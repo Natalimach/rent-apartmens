@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Flats</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header-all">
+    <div class="header-black-block1">
+      <div class="header-black-inside">
+        <div class="header-black-block1-logo">
+          <img src="images/logo.png" alt="logo">
+        </div>
+        <div class="header-black-block1-skype">
+          <img src="images/skype-logo.png" alt="icon skype">
+          <p> arendakvartir</p>
+        </div>
+        <div class="header-black-block1-letter">
+          <img src="images/letter.png" alt="icon letter">
+          <p> arendakvartir@gmail.com</p>
+        </div>
+        <div class="header-black-block1-icon">
+          <a href="#">  <img src="images/vk-social-network-logo.png" alt="вконтакте"></a>
+          <a href="#"><img src="images/odnoklassniki_filled1600.png" alt="одноклассники"></a>
+          <a href="#">  <img src="images/twitter.png" alt="твитер"></a>
+          <a href="#">  <img src="images/instagram-logo.png" alt="инстаграм"></a>
+          <a href="#"><img src="images/facebook-logo(1).png" alt="фэйсбук"></a>
+          <a href="#">  <img src="images/google-plus-logo-on-black-background.png" alt="гугл"></a>
+
+        </div>
+      </div>
+
+
+      <!-- бургер-меню -->
+      <button class="dropdown-btn"><span style="cursor:pointer;color:#ffffff;" onclick="openNavMenu()">&#9776;</span></button>
+      <div id="myNavLittle" class="dropdown-container">
+        <a href="#whyus">ПОЧЕМУ МЫ</a>
+        <a href="#flate">КВАРТИРЫ</a>
+        <a href="#weWork">КАК МЫ РАБОТАЕМ</a>
+        <a href="#ourteam">НАША КОМАНДА</a>
+        <a href="#reviews">ОТЗЫВЫ</a>
+        <a href="#contacts">КОНТАКТЫ</a>
+      </div>
+
+    </div>
+
+
+    <div class="header-color-block">
+      <div class="header-color-block-zakazatzvonok">
+        <p onclick="document.getElementById('id01').style.display='block'">ЗАКАЗАТЬ ЗВОНОК</p>
+        <p>Работаем круглосуточно!</p>
+      </div>
+      <div class="header-color-block-Ntelefona">
+        <img src="images/old-typical-phone.png" alt="icon phone">
+        <p>+7 901 123-45-67<br>+7 906 123-45-67<br> +7 916 123-45-67</p>
+      </div>
+    </div>
+    <nav class="header-block-nav">
+      <a href="#whyus">ПОЧЕМУ МЫ</a>
+      <a href="#flate">КВАРТИРЫ</a>
+      <a href="#weWork">КАК МЫ РАБОТАЕМ</a>
+      <a href="#ourteam">НАША КОМАНДА</a>
+      <a href="#reviews">ОТЗЫВЫ</a>
+      <a href="#contacts">КОНТАКТЫ</a>
+    </nav>
+  </header>
+
+
+
+  <!-- Блок АРЕНДА -->
+  <!-- Блок АРЕНДА для мобильных -->
+  <div class="block-slider-mob">
+    <p class="block-slider-mob-arenda">ПОСУТОЧНАЯ АРЕНДА<br> КВАРТИР В МОСКВЕ</p>
+    <div class="block-slider-mob-blue">
+      <p>Оставьте заявку и получите<br><strong> скидку 10% </strong></p>
+      <div onclick="document.getElementById('id04').style.display='block'" class="take-sale">
+        <p>ПОЛУЧИТЬ СКИДКУ</p>
+      </div>
+    </div>
+  </div>
+  <!-- Блок АРЕНДА для планшетов и выше -->
+  <div class="block-slider-pl">
+    <div class="block-slider-pl-black">
+      <p class="block-slider-pl-arenda">ПОСУТОЧНАЯ АРЕНДА<br> КВАРТИР В МОСКВЕ</p>
+      <p class="block-slider-pl-big">ПОСУТОЧНАЯ АРЕНДА КВАРТИР В МОСКВЕ</p>
+      <div class="block-slider-pl1">
+        <div class="block-slider-pl-blue">
+          <p class="block-slider-pl-blue-text">Оставте заявку <br>и получите<br><strong> СКИДКУ 10%</strong></p>
+          <div onclick="document.getElementById('id04').style.display='block'"  class="take-sale-pl">
+            <p>ПОЛУЧИТЬ СКИДКУ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="id04" class="form-block-flat-modal">
+  <form class="form-block-flats" action="action_page.php" method="get">
+    <div class="container-form-block-flats">
+     <h3>Расчитать стоимость проживания с учетом скидки</h3>
+
+
+     <p> Адрес: <select class="container-form-block-flats-select"  name="address-sale">
+       <option>Москва, ул.Шоссейная, 1-117</option>
+           <option>Москва, ул.Строителей, 22-7</option>
+       <option>Москва, ул.Смоленская, 123-1</option>
+          <option>Москва, ул.Пролетарская, 15-23</option>
+       </select> </p>
+
+
+      <div class="booking-day"><p>Дата заезда:
+      <label for="ARRANGEMENTS-sale">
+      <input type="date"  name="ARRANGEMENTS" id="ARRANGEMENTS-sale" required></label></p>
+        <p>Дата отъезда:
+      <label for="departure-sale">
+      <input type="date"  name="departure" id="departure-sale" required></label></p>
+        <p> Гостей: <select class="form-company"  name="company-sale">
+       <option value="0">0</option>
+           <option value="1">1</option>
+       <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+       </select> </p>
+
+      </div>
+
+        <label for="user-name-sale">
+      <input type="text" placeholder="Ваше имя..." name="user-name" id="user-name-sale" required></label>
+        <label for="user-tel-sale">
+      <input type="text" placeholder="Ваш контактный телефон..." name="user-tel" id="user-tel-sale" required></label>
+
+
+
+         <button type="button" onclick="document.getElementById('id04').style.display='none'" >ЗАБРОНИРОВАТЬ</button>
+
+        </div>
+  </form>
+  </div>
+  <!-- Блок ПОЧЕМУ МЫ -->
+  <div class="block-whyus">
+    <h2 id="whyus">ПОЧЕМУ МЫ</h2>
+    <div class="block-icon3">
+      <img src="images/icon1.png" alt="icon">
+      <img src="images/icon2.png" alt="icon">
+      <img src="images/icon3.png" alt="icon">
+
+    </div>
+    <div class="block-icon4">
+      <img src="images/icon1.png" alt="icon">
+    </div>
+    <div class="block-icon1">
+      <img src="images/icon2.png" alt="icon">
+      <img src="images/icon3.png" alt="icon">
+    </div>
+
+
+    <div class="block-icon2">
+      <img src="images/icon4.png" alt="icon">
+      <img src="images/icon5.png" alt="icon">
+    </div>
+
+    <div class="block-icon5">
+      <img src="images/icon1.png" alt="icon">
+      <img src="images/icon2.png" alt="icon">
+      <img src="images/icon3.png" alt="icon">
+      <img src="images/icon4.png" alt="icon">
+      <img src="images/icon5.png" alt="icon">
+    </div>
+
+  </div>
+
+  <!-- Блок КВАРТИРЫ -->
+  <h2 class="titel-flat" id="flate">КВАРТИРЫ</h2>
+
+
+
+  <div id="id03" class="form-block-flat-modal">
+  <form class="form-block-flats" action="action_page.php" method="get">
+    <div class="container-form-block-flats">
+     <h3>Забронировать квартиру</h3>
+
+
+     <p> Адрес: <select class="container-form-block-flats-select"  name="address">
+       <option>Москва, ул.Шоссейная, 1-117</option>
+           <option>Москва, ул.Строителей, 22-7</option>
+       <option>Москва, ул.Смоленская, 123-1</option>
+          <option>Москва, ул.Пролетарская, 15-23</option>
+       </select> </p>
+
+
+      <div class="booking-day"><p>Дата заезда:
+      <label for="ARRANGEMENTS">
+      <input type="date"  name="ARRANGEMENTS" id="ARRANGEMENTS" required></label></p>
+        <p>Дата отъезда:
+      <label for="departure">
+      <input type="date"  name="departure" id="departure" required></label></p>
+        <p> Гостей: <select class="form-company"  name="company">
+       <option value="0">0</option>
+           <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+       </select> </p>
+
+      </div>
+
+        <label for="user-name">
+      <input type="text" placeholder="Ваше имя..." name="user-name" id="user-name" required></label>
+        <label for="user-tel">
+      <input type="text" placeholder="Ваш контактный телефон..." name="user-tel" id="user-tel" required></label>
+
+
+
+         <button type="button" onclick="document.getElementById('id03').style.display='none'" >ЗАБРОНИРОВАТЬ</button>
+
+        </div>
+  </form>
+  </div>
+
+  <div class="block-flats">
+    <div class="block-flats-1block">
+      <div class="block-flats1">
+        <div class="block-flats-img1">
+          <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+            <p>Забронировать</p>
+          </div>
+        </div>
+        <div class="block-flats-text">
+          <p class="block-flats-text1">1-КОМНАТНАЯ КВАРТИРА С ЛОДЖИЕЙ</p>
+          <p class="block-flats-text7">1-КОМНАТНАЯ КВАРТИРА <br>С ЛОДЖИЕЙ</p>
+          <p class="block-flats-text2">Юго-Восточный округ</p>
+          <p class="block-flats-text3">2100 руб/сутки;<br> 400 руб/час;</p>
+          <p id="moreINFO" onclick="myFunction1()" class="block-flats-text4">подробнее</p>
+        </div>
+      </div>
+
+      <div class="block-flats1-more" id="myDIV">
+        <div class="block-flats1-more-imageAndAbout">
+          <div class="block-flats1-more-image">
+            <div class="block-flats1-more-image-row1">
+              <div class="block-flats1-more-image-column">
+                <img src="images/room1.png" alt="room" onclick="openModalImage();currentSlideImage(1)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room2.png" alt="room" onclick="openModalImage();currentSlideImage(2)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room3.png" alt="room" onclick="openModalImage();currentSlideImage(3)" class="hover-shadow-image cursor">
+              </div>
+            </div>
+            <div class="block-flats1-more-image-row1">
+              <div class="block-flats1-more-image-column">
+                <img src="images/room4.png" alt="room" onclick="openModalImage();currentSlideImage(4)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room5.png" alt="room" onclick="openModalImage();currentSlideImage(5)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room6.png" alt="room" onclick="openModalImage();currentSlideImage(6)" class="hover-shadow-image cursor">
+              </div>
+            </div>
+          </div>
+
+          <div id="myModalImage" class="block-flats1-more-modal">
+            <span class="close-block cursor" onclick="closeModalImage()">&times;</span>
+            <div class="block-flats1-more-modal-content">
+
+              <div class="mySlidesImage">
+                <img src="images/room1.png" style="width:100%" alt="">
+              </div>
+
+              <div class="mySlidesImage">
+                <img src="images/room2.png" style="width:100%" alt="">
+              </div>
+
+              <div class="mySlidesImage">
+                <img src="images/room3.png" style="width:100%" alt="">
+              </div>
+
+              <div class="mySlidesImage">
+                <img src="images/room4.png" style="width:100%" alt="">
+              </div>
+
+              <div class="mySlidesImage">
+                <img src="images/room5.png" style="width:100%" alt="">
+              </div>
+
+              <div class="mySlidesImage">
+                <img src="images/room6.png" style="width:100%" alt="">
+              </div>
+
+              <a class="prev-image" onclick="plusSlidesImage(-1)">&#10094;</a>
+              <a class="next-image" onclick="plusSlidesImage(1)">&#10095;</a>
+
+              <div class="caption-containerImage">
+                <p id="captionImage"></p>
+              </div>
+
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image cursor" src="images/room1.png" style="width:100%" onclick="currentSlide(1)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image cursor" src="images/room2.png" style="width:100%" onclick="currentSlide(2)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image cursor" src="images/room3.png" style="width:100%" onclick="currentSlide(3)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image cursor" src="images/room4.png" style="width:100%" onclick="currentSlide(4)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image cursor" src="images/room5.png" style="width:100%" onclick="currentSlide(5)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image cursor" src="images/room6.png" style="width:100%" onclick="currentSlide(6)" alt="">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="block-flats1-more-texe">
+            <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+            <p><strong>метро:</strong> Печатники</p>
+            <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+            <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное
+              белье
+            </p>
+          </div>
+
+        </div>
+        <img class="block-flats1-map" src="images/map-mob.png" alt="flat">
+      </div>
+
+      <div class="block-flats1">
+        <div class="block-flats-img2">
+          <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+            <p>Забронировать</p>
+          </div>
+        </div>
+        <div class="block-flats-text">
+          <p class="block-flats-text1">2-КОМНАТНАЯ КВАРТИРА С ЛОДЖИЕЙ</p>
+          <p class="block-flats-text7">2-КОМНАТНАЯ КВАРТИРА<br> С ЛОДЖИЕЙ</p>
+          <p class="block-flats-text2">Юго-Восточный округ</p>
+          <p class="block-flats-text3">4200 руб/сутки;<br> 800 руб/час;</p>
+          <p id="moreINFO1" onclick="myFunction2()" class="block-flats-text4">подробнее</p>
+        </div>
+      </div>
+    </div>
+    <div class="block-flats1-more" id="myDIV1">
+      <div class="block-flats1-more-imageAndAbout">
+        <div class="block-flats1-more-image">
+          <div class="block-flats1-more-image-row1">
+            <div class="block-flats1-more-image-column">
+              <img src="images/room1.png" alt="room" onclick="openModalImage2();currentSlideImage2(1)" class="hover-shadow-image cursor">
+            </div>
+            <div class="block-flats1-more-image-column">
+              <img src="images/room2.png" alt="room" onclick="openModalImage2();currentSlideImage2(2)" class="hover-shadow-image cursor">
+            </div>
+            <div class="block-flats1-more-image-column">
+              <img src="images/room3.png" alt="room" onclick="openModalImage2();currentSlideImage2(3)" class="hover-shadow-image cursor">
+            </div>
+          </div>
+          <div class="block-flats1-more-image-row1">
+            <div class="block-flats1-more-image-column">
+              <img src="images/room4.png" alt="room" onclick="openModalImage2();currentSlideImage2(4)" class="hover-shadow-image cursor">
+            </div>
+            <div class="block-flats1-more-image-column">
+              <img src="images/room5.png" alt="room" onclick="openModalImage2();currentSlideImage2(5)" class="hover-shadow-image cursor">
+            </div>
+            <div class="block-flats1-more-image-column">
+              <img src="images/room6.png" alt="room" onclick="openModalImage2();currentSlideImage2(6)" class="hover-shadow-image cursor">
+            </div>
+          </div>
+        </div>
+
+        <div id="myModalImage2" class="block-flats1-more-modal">
+          <span class="close-block cursor" onclick="closeModalImage2()">&times;</span>
+          <div class="block-flats1-more-modal-content">
+
+            <div class="mySlidesImage2">
+              <img src="images/room1.png" style="width:100%" alt="room">
+            </div>
+
+            <div class="mySlidesImage2">
+              <img src="images/room2.png" style="width:100%" alt="room">
+            </div>
+
+            <div class="mySlidesImage2">
+              <img src="images/room3.png" style="width:100%" alt="room">
+            </div>
+
+            <div class="mySlidesImage2">
+              <img src="images/room4.png" style="width:100%" alt="room">
+            </div>
+
+            <div class="mySlidesImage2">
+              <img src="images/room5.png" style="width:100%" alt="room">
+            </div>
+
+            <div class="mySlidesImage2">
+              <img src="images/room6.png" style="width:100%" alt="room">
+            </div>
+
+            <a class="prev-image" onclick="plusSlidesImage2(-1)">&#10094;</a>
+            <a class="next-image" onclick="plusSlidesImage2(1)">&#10095;</a>
+
+            <div class="caption-containerImage">
+              <p id="captionImage2"></p>
+            </div>
+
+            <div class="block-flats1-more-image-column1">
+              <img class="demo-image2 cursor" src="images/room1.png" style="width:100%" onclick="currentSlide2(1)" alt="">
+            </div>
+            <div class="block-flats1-more-image-column1">
+              <img class="demo-image2 cursor" src="images/room2.png" style="width:100%" onclick="currentSlide2(2)" alt="">
+            </div>
+            <div class="block-flats1-more-image-column1">
+              <img class="demo-image2 cursor" src="images/room3.png" style="width:100%" onclick="currentSlide2(3)" alt="">
+            </div>
+            <div class="block-flats1-more-image-column1">
+              <img class="demo-image2 cursor" src="images/room4.png" style="width:100%" onclick="currentSlide2(4)" alt="">
+            </div>
+            <div class="block-flats1-more-image-column1">
+              <img class="demo-image2 cursor" src="images/room5.png" style="width:100%" onclick="currentSlide2(5)" alt="">
+            </div>
+            <div class="block-flats1-more-image-column1">
+              <img class="demo-image2 cursor" src="images/room6.png" style="width:100%" onclick="currentSlide2(6)" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="block-flats1-more-texe">
+          <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+          <p><strong>метро:</strong> Печатники</p>
+          <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+          <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное белье</p>
+        </div>
+
+      </div>
+      <img class="block-flats1-map" src="images/map-mob.png" alt="flat">
+    </div>
+
+    <div class="block-flats-2block">
+      <div class="block-flats1">
+        <div class="block-flats-img3">
+          <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+            <p>Забронировать</p>
+          </div>
+        </div>
+        <div class="block-flats-text">
+          <p class="block-flats-text1">3-КОМНАТНАЯ КВАРТИРА</p>
+          <p class="block-flats-text7">3-КОМНАТНАЯ КВАРТИРА</p>
+          <p class="block-flats-text2">Юго-Восточный округ</p>
+          <p class="block-flats-text3">6000 руб/сутки;<br> 1000 руб/час;</p>
+          <p id="moreINFO3" onclick="myFunction3()" class="block-flats-text4">подробнее</p>
+        </div>
+      </div>
+      <div class="block-flats1-more" id="myDIV3">
+        <div class="block-flats1-more-imageAndAbout">
+          <div class="block-flats1-more-image">
+            <div class="block-flats1-more-image-row1">
+              <div class="block-flats1-more-image-column">
+                <img src="images/room1.png" alt="room" onclick="openModalImage3();currentSlideImage3(1)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room2.png" alt="room" onclick="openModalImage3();currentSlideImage3(2)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room3.png" alt="room" onclick="openModalImage3();currentSlideImage3(3)" class="hover-shadow-image cursor">
+              </div>
+            </div>
+            <div class="block-flats1-more-image-row1">
+              <div class="block-flats1-more-image-column">
+                <img src="images/room4.png" alt="room" onclick="openModalImage3();currentSlideImage3(4)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room5.png" alt="room" onclick="openModalImage3();currentSlideImage3(5)" class="hover-shadow-image cursor">
+              </div>
+              <div class="block-flats1-more-image-column">
+                <img src="images/room6.png" alt="room" onclick="openModalImage3();currentSlideImage3(6)" class="hover-shadow-image cursor">
+              </div>
+            </div>
+          </div>
+
+          <div id="myModalImage3" class="block-flats1-more-modal">
+            <span class="close-block cursor" onclick="closeModalImage3()">&times;</span>
+            <div class="block-flats1-more-modal-content">
+
+              <div class="mySlidesImage3">
+                <img src="images/room1.png" style="width:100%" alt="room">
+              </div>
+
+              <div class="mySlidesImage3">
+                <img src="images/room2.png" style="width:100%" alt="room">
+              </div>
+
+              <div class="mySlidesImage3">
+                <img src="images/room3.png" style="width:100%" alt="room">
+              </div>
+
+              <div class="mySlidesImage3">
+                <img src="images/room4.png" style="width:100%" alt="room">
+              </div>
+
+              <div class="mySlidesImage3">
+                <img src="images/room5.png" style="width:100%" alt="room">
+              </div>
+
+              <div class="mySlidesImage3">
+                <img src="images/room6.png" style="width:100%" alt="room">
+              </div>
+
+              <a class="prev-image" onclick="plusSlidesImage3(-1)">&#10094;</a>
+              <a class="next-image" onclick="plusSlidesImage3(1)">&#10095;</a>
+
+              <div class="caption-containerImage">
+                <p id="captionImage3"></p>
+              </div>
+
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image3 cursor" src="images/room1.png" style="width:100%" onclick="currentSlide3(1)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image3 cursor" src="images/room2.png" style="width:100%" onclick="currentSlide3(2)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image3 cursor" src="images/room3.png" style="width:100%" onclick="currentSlide3(3)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image3 cursor" src="images/room4.png" style="width:100%" onclick="currentSlide3(4)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image3 cursor" src="images/room5.png" style="width:100%" onclick="currentSlide3(5)" alt="">
+              </div>
+              <div class="block-flats1-more-image-column1">
+                <img class="demo-image3 cursor" src="images/room6.png" style="width:100%" onclick="currentSlide3(6)" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="block-flats1-more-texe">
+            <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+            <p><strong>метро:</strong> Печатники</p>
+            <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+            <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное
+              белье
+            </p>
+          </div>
+
+        </div>
+        <img class="block-flats1-map" src="images/map-mob.png" alt="flat">
+      </div>
+
+
+      <div class="block-flats1">
+        <div class="block-flats-img4">
+          <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+            <p>Забронировать</p>
+          </div>
+        </div>
+        <div class="block-flats-text">
+          <p class="block-flats-text1">1-КОМНАТНАЯ КВАРТИРА</p>
+          <p class="block-flats-text7">1-КОМНАТНАЯ КВАРТИРА</p>
+          <p class="block-flats-text2">Юго-Восточный округ</p>
+          <p class="block-flats-text3">2300руб/сутки;<br> 440 руб/час;</p>
+          <p id="moreINFO4" onclick="myFunction4()" class="block-flats-text4">подробнее</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block-flats1-more" id="myDIV4">
+    <div class="block-flats1-more-imageAndAbout">
+      <div class="block-flats1-more-image">
+        <div class="block-flats1-more-image-row1">
+          <div class="block-flats1-more-image-column">
+            <img src="images/room1.png" alt="room" onclick="openModalImage4();currentSlideImage4(1)" class="hover-shadow-image cursor">
+          </div>
+          <div class="block-flats1-more-image-column">
+            <img src="images/room2.png" alt="room" onclick="openModalImage4();currentSlideImage4(2)" class="hover-shadow-image cursor">
+          </div>
+          <div class="block-flats1-more-image-column">
+            <img src="images/room3.png" alt="room" onclick="openModalImage4();currentSlideImage4(3)" class="hover-shadow-image cursor">
+          </div>
+        </div>
+        <div class="block-flats1-more-image-row1">
+          <div class="block-flats1-more-image-column">
+            <img src="images/room4.png" alt="room" onclick="openModalImage4();currentSlideImage4(4)" class="hover-shadow-image cursor">
+          </div>
+          <div class="block-flats1-more-image-column">
+            <img src="images/room5.png" alt="room" onclick="openModalImage4();currentSlideImage4(5)" class="hover-shadow-image cursor">
+          </div>
+          <div class="block-flats1-more-image-column">
+            <img src="images/room6.png" alt="room" onclick="openModalImage4();currentSlideImage4(6)" class="hover-shadow-image cursor">
+          </div>
+        </div>
+      </div>
+
+      <div id="myModalImage4" class="block-flats1-more-modal">
+        <span class="close-block cursor" onclick="closeModalImage4()">&times;</span>
+        <div class="block-flats1-more-modal-content">
+
+          <div class="mySlidesImage4">
+            <img src="images/room1.png" style="width:100%" alt="room">
+          </div>
+
+          <div class="mySlidesImage4">
+            <img src="images/room2.png" style="width:100%" alt="room">
+          </div>
+
+          <div class="mySlidesImage4">
+            <img src="images/room3.png" style="width:100%" alt="room">
+          </div>
+
+          <div class="mySlidesImage4">
+            <img src="images/room4.png" style="width:100%" alt="room">
+          </div>
+
+          <div class="mySlidesImage4">
+            <img src="images/room5.png" style="width:100%" alt="room">
+          </div>
+
+          <div class="mySlidesImage4">
+            <img src="images/room6.png" style="width:100%" alt="room">
+          </div>
+
+          <a class="prev-image" onclick="plusSlidesImage4(-1)">&#10094;</a>
+          <a class="next-image" onclick="plusSlidesImage4(1)">&#10095;</a>
+
+          <div class="caption-containerImage">
+            <p id="captionImage4"></p>
+          </div>
+
+          <div class="block-flats1-more-image-column1">
+            <img class="demo-image4 cursor" src="images/room1.png" style="width:100%" onclick="currentSlide4(1)" alt="">
+          </div>
+          <div class="block-flats1-more-image-column1">
+            <img class="demo-image4 cursor" src="images/room2.png" style="width:100%" onclick="currentSlide4(2)" alt="">
+          </div>
+          <div class="block-flats1-more-image-column1">
+            <img class="demo-image4 cursor" src="images/room3.png" style="width:100%" onclick="currentSlide4(3)" alt="">
+          </div>
+          <div class="block-flats1-more-image-column1">
+            <img class="demo-image4 cursor" src="images/room4.png" style="width:100%" onclick="currentSlide4(4)" alt="">
+          </div>
+          <div class="block-flats1-more-image-column1">
+            <img class="demo-image4 cursor" src="images/room5.png" style="width:100%" onclick="currentSlide4(5)" alt="">
+          </div>
+          <div class="block-flats1-more-image-column1">
+            <img class="demo-image4 cursor" src="images/room6.png" style="width:100%" onclick="currentSlide4(6)" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="block-flats1-more-texe">
+        <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+        <p><strong>метро:</strong> Печатники</p>
+        <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+        <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное белье</p>
+      </div>
+
+    </div>
+    <img class="block-flats1-map" src="images/map-mob.png" alt="flat">
+  </div>
+
+
+
+  <!-- Блок КВАРТИРЫ для мониторов-->
+  <div class="block-flats-big">
+    <div class="block-flats-1block">
+      <div class="block-flats1">
+        <div class="block-flats-img1">
+        </div>
+        <div class="block-flats-text">
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text7">1-КОМНАТНАЯ КВАРТИРА <br>С ЛОДЖИЕЙ</p>
+            <p class="block-flats-text2">Юго-Восточный округ</p>
+            <p id="moreINFO5" onclick="myFunction5()" class="block-flats-text4">подробнее</p>
+          </div>
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text3">2100 руб/сутки;<br> 400 руб/час;</p>
+            <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+              <p>Забронировать</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="block-flats1-more" id="myDIV5">
+          <div class="block-flats1-more-imageAndAbout">
+            <div class="block-flats1-more-image">
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room1.png" alt="room" onclick="openModalImage5();currentSlideImage5(1)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room2.png" alt="room" onclick="openModalImage5();currentSlideImage5(2)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room3.png" alt="room" onclick="openModalImage5();currentSlideImage5(3)" class="hover-shadow-image cursor">
+                </div>
+              </div>
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room4.png" alt="room" onclick="openModalImage5();currentSlideImage5(4)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room5.png" alt="room" onclick="openModalImage5();currentSlideImage5(5)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room6.png" alt="room" onclick="openModalImage5();currentSlideImage5(6)" class="hover-shadow-image cursor">
+                </div>
+              </div>
+            </div>
+
+            <div id="myModalImage5" class="block-flats1-more-modal">
+              <span class="close-block cursor" onclick="closeModalImage5()">&times;</span>
+              <div class="block-flats1-more-modal-content">
+
+                <div class="mySlidesImage5">
+                  <img src="images/room1.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage5">
+                  <img src="images/room2.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage5">
+                  <img src="images/room3.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage5">
+                  <img src="images/room4.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage5">
+                  <img src="images/room5.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage5">
+                  <img src="images/room6.png" style="width:100%" alt="room">
+                </div>
+
+                <a class="prev-image" onclick="plusSlidesImage5(-1)">&#10094;</a>
+                <a class="next-image" onclick="plusSlidesImage5(1)">&#10095;</a>
+
+                <div class="caption-containerImage">
+                  <p id="captionImage5"></p>
+                </div>
+
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image5 cursor" src="images/room1.png" style="width:100%" onclick="currentSlide5(1)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image5 cursor" src="images/room2.png" style="width:100%" onclick="currentSlide5(2)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image5 cursor" src="images/room3.png" style="width:100%" onclick="currentSlide5(3)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image5 cursor" src="images/room4.png" style="width:100%" onclick="currentSlide5(4)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image5 cursor" src="images/room5.png" style="width:100%" onclick="currentSlide5(5)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image5 cursor" src="images/room6.png" style="width:100%" onclick="currentSlide5(6)" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="block-flats1-more-texe">
+              <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+              <p><strong>метро:</strong> Печатники</p>
+              <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+              <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное
+                белье
+              </p>
+            </div>
+
+          </div>
+          <img class="block-flats1-map" src="images/map-mob.png" alt="flat">
+        </div>
+      </div>
+
+
+
+      <div class="block-flats1">
+        <div class="block-flats-img2">
+
+        </div>
+        <div class="block-flats-text">
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text7">2-КОМНАТНАЯ КВАРТИРА<br> С ЛОДЖИЕЙ</p>
+            <p class="block-flats-text2">Юго-Восточный округ</p>
+            <p id="moreINFO6" onclick="myFunction6()" class="block-flats-text4">подробнее</p>
+          </div>
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text3">4200 руб/сутки;<br> 800 руб/час;</p>
+            <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+              <p>Забронировать</p>
+            </div>
+          </div>
+        </div>
+        <div class="block-flats1-more" id="myDIV6">
+          <div class="block-flats1-more-imageAndAbout">
+            <div class="block-flats1-more-image">
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room1.png" alt="room" onclick="openModalImage6();currentSlideImage6(1)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room2.png" alt="room" onclick="openModalImage6();currentSlideImage6(2)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room3.png" alt="room" onclick="openModalImage6();currentSlideImage6(3)" class="hover-shadow-image cursor">
+                </div>
+              </div>
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room4.png" alt="room" onclick="openModalImage6();currentSlideImage6(4)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room5.png" alt="room" onclick="openModalImage6();currentSlideImage6(5)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room6.png" alt="room" onclick="openModalImage6();currentSlideImage6(6)" class="hover-shadow-image cursor">
+                </div>
+              </div>
+            </div>
+
+            <div id="myModalImage6" class="block-flats1-more-modal">
+              <span class="close-block cursor" onclick="closeModalImage6()">&times;</span>
+              <div class="block-flats1-more-modal-content">
+
+                <div class="mySlidesImage6">
+                  <img src="images/room1.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage6">
+                  <img src="images/room2.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage6">
+                  <img src="images/room3.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage6">
+                  <img src="images/room4.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage6">
+                  <img src="images/room5.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage6">
+                  <img src="images/room6.png" style="width:100%" alt="room">
+                </div>
+
+                <a class="prev-image" onclick="plusSlidesImage6(-1)">&#10094;</a>
+                <a class="next-image" onclick="plusSlidesImage6(1)">&#10095;</a>
+
+                <div class="caption-containerImage">
+                  <p id="captionImage6"></p>
+                </div>
+
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image6 cursor" src="images/room1.png" style="width:100%" onclick="currentSlide6(1)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image6 cursor" src="images/room2.png" style="width:100%" onclick="currentSlide6(2)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image6 cursor" src="images/room3.png" style="width:100%" onclick="currentSlide6(3)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image6 cursor" src="images/room4.png" style="width:100%" onclick="currentSlide6(4)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image6 cursor" src="images/room5.png" style="width:100%" onclick="currentSlide6(5)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image6 cursor" src="images/room6.png" style="width:100%" onclick="currentSlide6(6)" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="block-flats1-more-texe">
+              <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+              <p><strong>метро:</strong> Печатники</p>
+              <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+              <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное
+                белье
+              </p>
+            </div>
+
+          </div>
+          <img class="block-flats1-map" src="images/map-mob.png" alt="flat">
+        </div>
+      </div>
+    </div>
+    <div class="block-flats-1block">
+      <div class="block-flats1">
+        <div class="block-flats-img3">
+
+        </div>
+        <div class="block-flats-text">
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text7">3-КОМНАТНАЯ КВАРТИРА </p>
+            <p class="block-flats-text2">Юго-Восточный округ</p>
+            <p id="moreINFO7" onclick="myFunction7()" class="block-flats-text4">подробнее</p>
+          </div>
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text3">6000 руб/сутки;<br> 1000 руб/час;</p>
+            <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+              <p>Забронировать</p>
+            </div>
+          </div>
+        </div>
+        <div class="block-flats1-more" id="myDIV7">
+          <div class="block-flats1-more-imageAndAbout">
+            <div class="block-flats1-more-image">
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room1.png" alt="room" onclick="openModalImage7();currentSlideImage7(1)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room2.png" alt="room" onclick="openModalImage7();currentSlideImage7(2)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room3.png" alt="room" onclick="openModalImage7();currentSlideImage7(3)" class="hover-shadow-image cursor">
+                </div>
+              </div>
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room4.png" alt="room" onclick="openModalImage7();currentSlideImage7(4)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room5.png" alt="room" onclick="openModalImage7();currentSlideImage7(5)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room6.png" alt="room" onclick="openModalImage7();currentSlideImage7(6)" class="hover-shadow-image cursor">
+                </div>
+              </div>
+            </div>
+
+            <div id="myModalImage7" class="block-flats1-more-modal">
+              <span class="close-block cursor" onclick="closeModalImage7()">&times;</span>
+              <div class="block-flats1-more-modal-content">
+
+                <div class="mySlidesImage7">
+                  <img src="images/room1.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage7">
+                  <img src="images/room2.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage7">
+                  <img src="images/room3.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage7">
+                  <img src="images/room4.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage7">
+                  <img src="images/room5.png" style="width:100%" alt="room">
+                </div>
+
+                <div class="mySlidesImage7">
+                  <img src="images/room6.png" style="width:100%" alt="room">
+                </div>
+
+                <a class="prev-image" onclick="plusSlidesImage7(-1)">&#10094;</a>
+                <a class="next-image" onclick="plusSlidesImage7(1)">&#10095;</a>
+
+                <div class="caption-containerImage">
+                  <p id="captionImage7"></p>
+                </div>
+
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image7 cursor" src="images/room1.png" style="width:100%" onclick="currentSlide7(1)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image7 cursor" src="images/room2.png" style="width:100%" onclick="currentSlide7(2)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image7 cursor" src="images/room3.png" style="width:100%" onclick="currentSlide7(3)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image7 cursor" src="images/room4.png" style="width:100%" onclick="currentSlide7(4)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image7 cursor" src="images/room5.png" style="width:100%" onclick="currentSlide7(5)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image7 cursor" src="images/room6.png" style="width:100%" onclick="currentSlide7(6)" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="block-flats1-more-texe">
+              <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+              <p><strong>метро:</strong> Печатники</p>
+              <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+              <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное
+                белье
+              </p>
+            </div>
+
+          </div>
+          <img class="block-flats1-map" src="images/map-mob.png" alt="flat">
+        </div>
+      </div>
+
+      <div class="block-flats1">
+        <div class="block-flats-img4">
+
+        </div>
+        <div class="block-flats-text">
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text7">1-КОМНАТНАЯ КВАРТИРА</p>
+            <p class="block-flats-text2">Юго-Восточный округ</p>
+            <p id="moreINFO8" onclick="myFunction8()" class="block-flats-text4">подробнее</p>
+          </div>
+          <div class="block-flats-text-aboutflat1">
+            <p class="block-flats-text3">2300 руб/сутки;<br> 440 руб/час;</p>
+            <div onclick="document.getElementById('id03').style.display='block'" class="block-flats-zacaz">
+              <p>Забронировать</p>
+            </div>
+          </div>
+        </div>
+        <div class="block-flats1-more" id="myDIV8">
+          <div class="block-flats1-more-imageAndAbout">
+            <div class="block-flats1-more-image">
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room1.png" alt="room1" onclick="openModalImage8();currentSlideImage8(1)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room2.png" alt="room2" onclick="openModalImage8();currentSlideImage8(2)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room3.png" alt="room3" onclick="openModalImage8();currentSlideImage8(3)" class="hover-shadow-image cursor">
+                </div>
+              </div>
+              <div class="block-flats1-more-image-row1">
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room4.png" alt="room4" onclick="openModalImage8();currentSlideImage8(4)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room5.png" alt="room5" onclick="openModalImage8();currentSlideImage8(5)" class="hover-shadow-image cursor">
+                </div>
+                <div class="block-flats1-more-image-column">
+                  <img src="images/room6.png"  onclick="openModalImage8();currentSlideImage8(6)" class="hover-shadow-image cursor" alt="room6">
+                </div>
+              </div>
+            </div>
+
+            <div id="myModalImage8" class="block-flats1-more-modal">
+              <span class="close-block cursor" onclick="closeModalImage8()">&times;</span>
+              <div class="block-flats1-more-modal-content">
+
+                <div class="mySlidesImage8">
+                  <img src="images/room1.png" style="width:100%" alt="room1">
+                </div>
+
+                <div class="mySlidesImage8">
+                  <img src="images/room2.png" style="width:100%" alt="room2">
+                </div>
+
+                <div class="mySlidesImage8">
+                  <img src="images/room3.png" style="width:100%" alt="room3">
+                </div>
+
+                <div class="mySlidesImage8">
+                  <img src="images/room4.png" style="width:100%" alt="room4">
+                </div>
+
+                <div class="mySlidesImage8">
+                  <img src="images/room5.png" style="width:100%" alt="room5">
+                </div>
+
+                <div class="mySlidesImage8">
+                  <img src="images/room6.png" style="width:100%" alt="room6">
+                </div>
+
+                <a class="prev-image" onclick="plusSlidesImage8(-1)">&#10094;</a>
+                <a class="next-image" onclick="plusSlidesImage8(1)">&#10095;</a>
+
+                <div class="caption-containerImage">
+                  <p id="captionImage8"></p>
+                </div>
+
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image8 cursor" src="images/room1.png" style="width:100%" onclick="currentSlide8(1)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image8 cursor" src="images/room2.png" style="width:100%" onclick="currentSlide8(2)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image8 cursor" src="images/room3.png" style="width:100%" onclick="currentSlide8(3)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image8 cursor" src="images/room4.png" style="width:100%" onclick="currentSlide8(4)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image8 cursor" src="images/room5.png" style="width:100%" onclick="currentSlide8(5)" alt="">
+                </div>
+                <div class="block-flats1-more-image-column1">
+                  <img class="demo-image8 cursor" src="images/room6.png" style="width:100%" onclick="currentSlide8(6)" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="block-flats1-more-texe">
+              <p><strong>адрес:</strong> Москва, ул. Шоссейная, 3-17</p>
+              <p><strong>метро:</strong> Печатники</p>
+              <p><strong>описание:</strong> 7 этаж, блочный дом, лоджия</p>
+              <p><strong>мебель и бытовая техника:</strong> односпальная кровать, раскладной диван, холодильник, телевизор, микроволновая печь, стиральная машина, утюг, гладильная доска, сушилка для белья, безлимитный высокоскоростной интернет, постельное
+                белье
+              </p>
+            </div>
+
+          </div>
+          <img class="block-flats1-map" src="images/map-mob.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h5>СМОТРЕТЬ ВСЕ</h5>
+
+
+
+  <!-- Блок КАК МЫ РАБОТАЕМ -->
+
+  <div class="block-weWork2">
+    <h2 class="titel-flat" id="weWork">КАК МЫ РАБОТАЕМ</h2>
+
+    <div class="block-weWork">
+      <div class="block-weWork-bl1">
+        <div class="block-weWork1">
+          <div class="block-weWork-img1">
+            <img src="images/call-answer.png" alt="иконка1">
+          </div>
+          <div class="block-weWork-text">
+            <p class="block-weWork-text-number">1</p>
+            <p>Звоните нам либо нажимаете кнопу «Заказать звонок» или «Забронировать»</p>
+          </div>
+        </div>
+
+        <div class="block-weWork1">
+          <div class="block-weWork-img1">
+            <img src="images/calendar-interface-symbol-tool(1).png" alt="иконка2">
+          </div>
+          <div class="block-weWork-text">
+            <p class="block-weWork-text-number">2</p>
+            <p>Вместе с Вами выбираем даты заезда и выезда, обговариваем детали</p>
+          </div>
+        </div>
+
+        <div class="block-weWork1">
+          <div class="block-weWork-img1">
+            <img src="images/signing-the-contract.png" alt="иконка3">
+          </div>
+          <div class="block-weWork-text">
+            <p class="block-weWork-text-number">3</p>
+            <p>При заезде заключаем договор с указанием времен и даты заезда и выезда. Вы производите оплату</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="block-weWork-bl2">
+        <div class="block-weWork1">
+          <div class="block-weWork-img1">
+            <img src="images/hand-holding-up-a-key.png" alt="иконка4">
+          </div>
+          <div class="block-weWork-text">
+            <p class="block-weWork-text-number">4</p>
+            <p>Вы получаете ключи и квартира в Вашем полном распоряжении!</p>
+          </div>
+        </div>
+
+        <div class="block-weWork1">
+          <div class="block-weWork-img1">
+            <img src="images/clockwise-rotation.png" alt="иконка5">
+          </div>
+          <div class="block-weWork-text">
+            <p class="block-weWork-text-number">5</p>
+            <p>При продлении аренды сообщаете администратору за 2 часа до окончания времени аренды</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-weWork-big">
+      <div class="block-weWork1">
+        <div class="block-weWork-img1">
+          <img src="images/call-answer.png" alt="иконка1">
+        </div>
+        <div class="block-weWork-text">
+          <p class="block-weWork-text-number">1</p>
+          <p>Звоните нам либо нажимаете кнопу «Заказать звонок» или «Забронировать»</p>
+        </div>
+      </div>
+      <div class="block-weWork1">
+        <div class="block-weWork-img1">
+          <img src="images/calendar-interface-symbol-tool(1).png" alt="иконка2">
+        </div>
+        <div class="block-weWork-text">
+          <p class="block-weWork-text-number">2</p>
+          <p>Вместе с Вами выбираем даты заезда и выезда, обговариваем детали</p>
+        </div>
+      </div>
+      <div class="block-weWork1">
+        <div class="block-weWork-img1">
+          <img src="images/signing-the-contract.png" alt="иконка3">
+        </div>
+        <div class="block-weWork-text">
+          <p class="block-weWork-text-number">3</p>
+          <p>При заезде заключаем договор с указанием времен и даты заезда и выезда. Вы производите оплату</p>
+        </div>
+      </div>
+      <div class="block-weWork1">
+        <div class="block-weWork-img1">
+          <img src="images/hand-holding-up-a-key.png" alt="иконка4">
+        </div>
+        <div class="block-weWork-text">
+          <p class="block-weWork-text-number">4</p>
+          <p>Вы получаете ключи и квартира в Вашем полном распоряжении!</p>
+        </div>
+      </div>
+      <div class="block-weWork1">
+        <div class="block-weWork-img1">
+          <img src="images/clockwise-rotation.png" alt="иконка5">
+        </div>
+        <div class="block-weWork-text">
+          <p class="block-weWork-text-number">5</p>
+          <p>При продлении аренды сообщаете администратору за 2 часа до окончания времени аренды</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Блок НАША КОМАНДА -->
+  <div class="block-ourTeam-all">
+    <h2 class="titel-flat" id="ourteam">НАША КОМАНДА</h2>
+    <div class="block-ourTeam">
+      <div class="block-ourTeam-img1">
+        <div class="block-ourTeam-img">
+          <img src="images/Levcovski.png" alt="фото управляющего">
+          <p class="block-ourTeam-img-mob">Левковский<br>Олег<br>Викторович</p>
+          <p class="block-ourTeam-img-pl">Левковский Олег<br>Викторович</p>
+          <p>Управляющий</p>
+        </div>
+        <div class="block-ourTeam-img">
+          <img src="images/Korzun.png" alt="фото администратора">
+          <p class="block-ourTeam-img-mob">Корзун<br>Анастасия<br>Викторовна</p>
+          <p class="block-ourTeam-img-pl">Корзун Анастасия<br>Викторовна</p>
+          <p>Администратор</p>
+        </div>
+      </div>
+      <div class="block-ourTeam-img1">
+        <div class="block-ourTeam-img">
+          <img src="images/Stefanovich.png" alt="фото бухгалтера">
+          <p class="block-ourTeam-img-mob">Стефанович<br>Нина<br>Алексеевна</p>
+          <p class="block-ourTeam-img-pl">Стефанович Нина<br>Алексеевна</p>
+          <p>Бухгалтер</p>
+        </div>
+        <div class="block-ourTeam-img">
+          <img src="images/Kotkovskaya.png" alt="фото горничной">
+          <p class="block-ourTeam-img-mob">Котковская<br>Анна<br>Юрьевна</p>
+          <p class="block-ourTeam-img-pl">Котковская Анна<br>Юрьевна</p>
+          <p>Горничная</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Блок ОТЗЫВЫ -->
+  <div class="block-reviews">
+    <h2 class="titel-flat" id="reviews">ОТЗЫВЫ</h2>
+    <!-- форма оставить отзыв- -->
+    <div id="id02" class="form-block-reviews-modal">
+      <form class="form-block-reviews" action="action_page.php" method="get">
+        <div class="container-form-block-reviews">
+          <h3>Будем рады узнать Ваше<br>мнение о нашем сервисе!<br></h3>
+          <div class="container-form-row">
+            <label for="name">
+          <input type="text" placeholder="Ваше имя..." name="name" id="name" required></label>
+
+            <label for="work">
+          <input type="text" placeholder="Род занятий..." name="work" id="work"  required></label>
+
+            <label for="city">
+          <input type="text" placeholder="Город проживания..." name="city" id="city" required></label>
+          </div>
+          <textarea name="usrreview">Текст сообщения</textarea>
+          <button type="button" onclick="document.getElementById('id02').style.display='none'">ОПУБЛИКОВАТЬ</button>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- слайдер отзывов для мобильных устройтсв -->
+    <div class="block-reviews-slideshow-container-mob">
+      <div class="mySlides-mob block-reviews-yellow">
+        <div class="block-reviews-yellow-inside">
+          <div class="clearfix">
+            <img src="images/Elena.png" alt="фото Елена">
+            <div class="block-reviews1">
+              <p class="block-reviews1-name">Елена</p>
+              <p class="block-reviews1-name2">Репетитор по физике</p>
+              <p class="block-reviews1-name3">г.Санкт-Петербург</p>
+            </div>
+          </div>
+          <div class="block-reviews1">
+            <p class="block-reviews1-name4">«В Москву ездила на пару дней по делам. При поиске жилья остановила свой выбор на данном сервисе из-за доступных цен и удобства расположения. При заселении же была приятно удивлена их гостепреимством и доброжелательностью, особенно администратора
+              Анастасии!»
+            </p>
+            <p class="block-reviews1-name5">27 сентября 2017</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides-mob block-reviews-yellow">
+        <div class="block-reviews-yellow-inside">
+          <div class="clearfix">
+            <img src="images/Elena.png" alt="фото Елена">
+            <div class="block-reviews1">
+              <p class="block-reviews1-name">Марина</p>
+              <p class="block-reviews1-name2">Репетитор по физике</p>
+              <p class="block-reviews1-name3">г.Санкт-Петербург</p>
+            </div>
+          </div>
+          <div class="block-reviews1">
+            <p class="block-reviews1-name4">«В Москву ездила на пару дней по делам. При поиске жилья остановила свой выбор на данном сервисе из-за доступных цен и удобства расположения. При заселении же была приятно удивлена их гостепреимством и доброжелательностью, особенно администратора
+              Анастасии!»
+            </p>
+            <p class="block-reviews1-name5">27 сентября 2017</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides-mob block-reviews-yellow">
+        <div class="block-reviews-yellow-inside">
+          <div class="clearfix">
+            <img src="images/Elena.png" alt="фото Елена">
+            <div class="block-reviews1">
+              <p class="block-reviews1-name">Елена</p>
+              <p class="block-reviews1-name2">Репетитор по физике</p>
+              <p class="block-reviews1-name3">г.Санкт-Петербург</p>
+            </div>
+          </div>
+          <div class="block-reviews1">
+            <p class="block-reviews1-name4">«В Москву ездила на пару дней по делам. При поиске жилья остановила свой выбор на данном сервисе из-за доступных цен и удобства расположения. При заселении же была приятно удивлена их гостепреимством и доброжелательностью, особенно администратора
+              Анастасии!»
+            </p>
+            <p class="block-reviews1-name5">27 сентября 2017</p>
+          </div>
+        </div>
+      </div>
+      <a class="prev-mob" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next-mob" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot-mob" onclick="currentSlide(1)"></span>
+      <span class="dot-mob" onclick="currentSlide(2)"></span>
+      <span class="dot-mob" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <!-- слайдер отзывов для планшетов ии выше -->
+    <div class="block-reviews-slideshow-container-pl">
+      <div class="mySlides block-reviews-yellow-pl-outside">
+        <div class="block-reviews-yellow-pl">
+          <div class="box-image-float">
+            <img src="images/Elena.png" alt="фото Елена">
+          </div>
+          <div class="box-text-float">
+            <div class="block-reviews1">
+              <p class="block-reviews1-name">Елена</p>
+              <p class="block-reviews1-name2">Репетитор по физике</p>
+              <p class="block-reviews1-name2">г.Санкт-Петербург</p>
+            </div>
+
+            <div class="block-reviews2">
+              <p class="block-reviews1-name4">«В Москву ездила на пару дней по делам. При поиске жилья остановила свой выбор на данном сервисе из-за доступных цен и удобства расположения. При заселении же была приятно удивлена их гостепреимством и доброжелательностью, особенно администратора
+                Анастасии!»
+              </p>
+              <p class="block-reviews1-name5">27 сентября 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides block-reviews-yellow-pl-outside">
+        <div class="block-reviews-yellow-pl">
+          <div class="box-image-float">
+            <img src="images/Elena.png" alt="фото Елена">
+          </div>
+          <div class="box-text-float">
+            <div class="block-reviews1">
+              <p class="block-reviews1-name">Мария</p>
+              <p class="block-reviews1-name2">Репетитор по физике</p>
+              <p class="block-reviews1-name2">г.Санкт-Петербург</p>
+            </div>
+
+            <div class="block-reviews2">
+              <p class="block-reviews1-name4">«В Москву ездила на пару дней по делам. При поиске жилья остановила свой выбор на данном сервисе из-за доступных цен и удобства расположения. При заселении же была приятно удивлена их гостепреимством и доброжелательностью, особенно администратора
+                Анастасии!»
+              </p>
+              <p class="block-reviews1-name5">27 сентября 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides block-reviews-yellow-pl-outside">
+        <div class="block-reviews-yellow-pl">
+          <div class="box-image-float">
+            <img src="images/Elena.png" alt="фото Елена">
+          </div>
+          <div class="box-text-float">
+            <div class="block-reviews1">
+              <p class="block-reviews1-name">Виктория</p>
+              <p class="block-reviews1-name2">Репетитор по физике</p>
+              <p class="block-reviews1-name2">г.Санкт-Петербург</p>
+            </div>
+
+            <div class="block-reviews2">
+              <p class="block-reviews1-name4">«В Москву ездила на пару дней по делам. При поиске жилья остановила свой выбор на данном сервисе из-за доступных цен и удобства расположения. При заселении же была приятно удивлена их гостепреимством и доброжелательностью, особенно администратора
+                Анастасии!»
+              </p>
+              <p class="block-reviews1-name5">27 сентября 2017</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="prev" onclick="plusSlidespl(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlidespl(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlidepl(1)"></span>
+      <span class="dot" onclick="currentSlidepl(2)"></span>
+      <span class="dot" onclick="currentSlidepl(3)"></span>
+    </div>
+
+
+    <button  onclick="document.getElementById('id02').style.display='block'"  style="width:auto;" class="block-reviews-button">
+ОСТАВИТЬ ОТЗЫВ
+    </button>
+  </div>
+
+  <!-- блок КОНТАКТЫ -->
+  <div class="block-contacts">
+    <!-- форма заказать звонок -->
+    <div id="id01" class="form-zacazat-call-modal">
+      <form class="form-zacazat-call" action="action_page.php" method="get">
+        <div class="container-form-zacazat-call">
+          <h3>Заказать звонок нашего<br>администратора</h3>
+          <label for="name2">
+          <input type="text" placeholder="Ваше имя..." name="name" id="name2" required></label>
+          <label for="usrtel">
+          <input type="tel" placeholder="Ваш контактный телефон..." name="usrtel" id="usrtel" required></label>
+
+          <p> Позвоните мне в <label for="usrtime">
+          <input type="time"  name="usrtime" id="usrtime" required></label></p>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="block-contacts-text-bell">ОТПРАВИТЬ</button>
+        </div>
+      </form>
+    </div>
+
+    <h2 class="titel-flat" id="contacts"> КОНТАКТЫ </h2>
+    <!-- контакты для мобильных устройств -->
+    <div class="block-contacts1">
+      <div class="block-contacts-text">
+        <p class="block-contacts-text1">ЧУП "Лучшее место"</p>
+        <p class="block-contacts-text2">Посуточная аренда жилья в Москве</p>
+        <p class="block-contacts-text3">101000, г. Москва, ул. Тверская 17,<br> офис 27 </p>
+        <p class="block-contacts-text4">ИНН 1234567489</p>
+        <p class="block-contacts-text5">+7 901 123-45-67<br> +7 906 123-45-67<br> +7 915 123-45-67</p>
+        <button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="block-contacts-text-bell">
+      ЗАКАЗАТЬ ЗВОНОК
+        </button>
+        <div class="block-contacts-text-mail">
+          <img src="images/email.png" alt="логотип email">
+          <p>arendakvartir@gmail.com</p>
+        </div>
+        <div class="block-contacts-text-skype">
+          <img src="images/skype-logo-black.png" alt="логотип skype">
+          <p>arendakvartir</p>
+        </div>
+      </div>
+      <div class="block-contacts-map">
+
+      </div>
+    </div>
+
+    <!-- контакты для планшетов и выше -->
+    <div class="block-contacts-pl">
+      <div class="block-contacts-map">
+      </div>
+      <div class="block-contacts-text">
+        <p class="block-contacts-text1">ЧУП "Лучшее место"</p>
+        <p class="block-contacts-text2">Посуточная аренда жилья в Москве</p>
+        <p class="block-contacts-text3">101000, г. Москва, ул. Тверская 17, офис 27 </p>
+        <p class="block-contacts-text4">ИНН 1234567489</p>
+        <p class="block-contacts-text5">+7 901 123-45-67<br> +7 906 123-45-67<br> +7 915 123-45-67</p>
+
+        <button  onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="block-contacts-text-bell">
+ЗАКАЗАТЬ ЗВОНОК
+    </button >
+    <div class="block-contacts-text-mail">
+      <img src="images/email.png" alt="логотип email">
+      <p>arendakvartir@gmail.com</p>
+    </div>
+    <div class="block-contacts-text-skype">
+      <img src="images/skype-logo-black.png" alt="логотип skype">
+      <p>arendakvartir</p>
+    </div>
+  </div>
+ </div>
+</div>
+
+  <!-- блок FOOTER -->
+    <div class="block-footer">
+      <div class="block-footer1">
+        <img src="images/logo.png" alt="логотип">
+
+        <div class="block-footer-security">
+        <p>Безопасные платежи</p>
+          <img src="images/mastercard.png" alt="карта мастеркард">
+          <img src="images/paypal-logo-in-rectangular-black-card.png" alt="карта">
+          <img src="images/visa-pay-logo.png" alt="карта виза">
+
+        </div>
+        <div class="block-footer-socialNetworks">
+          <p>Присоединяйся к нам</p>
+          <img src="images/vk-social-network-logo.png" alt="вконтакте">
+          <img src="images/odnoklassniki_filled1600.png" alt="одноклассники">
+          <img src="images/twitter.png" alt="твитер">
+          <img src="images/instagram-logo.png" alt="инстаграм">
+          <img src="images/facebook-logo(1).png" alt="фэйсбук">
+          <img src="images/google-plus-logo-on-black-background.png" alt="гугл">
+
+        </div>
+      </div>
+
+      <div class="block-footer3">
+        <div class="block-footer-security">
+        <p>Безопасные платежи</p>
+          <img src="images/mastercard.png" alt="мастеркард">
+          <img src="images/paypal-logo-in-rectangular-black-card.png" alt="карта">
+          <img src="images/visa-pay-logo.png" alt="карта виза">
+
+        </div>
+        <div class="block-footer4">
+        <img src="images/logo.png" alt="">
+       </div>
+        <div class="block-footer-socialNetworks">
+          <p>Присоединяйся к нам</p>
+          <a href="#">  <img src="images/vk-social-network-logo.png" alt="вконтакте"></a>
+          <a href="#">  <img src="images/odnoklassniki_filled1600.png" alt="одноклассники"></a>
+          <a href="#"><img src="images/twitter.png" alt="твитер"></a>
+          <a href="#">  <img src="images/instagram-logo.png" alt="инстаграм"></a>
+          <a href="#"><img src="images/facebook-logo(1).png" alt="фэйсбук"></a>
+          <a href="#"><img src="images/google-plus-logo-on-black-background.png" alt="гугл"></a>
+          </div>
+      </div>
+
+
+      <div class="block-footer2">
+        <img src="images/copyright-symbol.png" alt="">
+        <p>2017 — 2018  Сайт создан на проекте SiteBlank</p>
+      </div>
+    </div>
+
+
+
+      <script src="JS/order-call.js"></script>
+      <script src="JS/buttunmeny.js"></script>
+      <script src="JS/button-review.js"></script>
+      <script src="JS/slider-pl.js"></script>
+      <script src="JS/slider-mob.js"></script>
+      <script src="JS/more-info.js"></script>
+      <script src="JS/more-info2.js"></script>
+      <script src="JS/more-info3.js"></script>
+      <script src="JS/more-info4.js"></script>
+      <script src="JS/more-info5.js"></script>
+      <script src="JS/more-info6.js"></script>
+      <script src="JS/more-info7.js"></script>
+      <script src="JS/more-info8.js"></script>
+      <script src="JS/slider-image.js"></script>
+
+
+</body>
+
+</html>
